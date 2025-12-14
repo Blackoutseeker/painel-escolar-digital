@@ -1,7 +1,8 @@
 from datetime import date
 
+
 class Nota:
-    def __init__(self, aluno, disciplina, valor, data = date):
+    def __init__(self, aluno, disciplina, valor, data=date):
         self.aluno = aluno
         self.disciplina = disciplina
         self.valor = valor
@@ -14,7 +15,3 @@ class Nota:
             f"Nota: {self.valor}\n"
             f"Data: {self.data.strftime('%d/%m/%Y')}"
         )
-
-
-nota1 = Nota("Gabriel", "Matemática", 8.5, date(2025, 11, 27))
-print(nota1)
