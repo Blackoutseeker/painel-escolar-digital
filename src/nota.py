@@ -2,7 +2,7 @@ from datetime import date
 
 
 class Nota:
-    def __init__(self, aluno, disciplina, valor, data=date):
+    def __init__(self, aluno, disciplina, valor, data=date.today()):
         self.aluno = aluno
         self.disciplina = disciplina
         self.valor = valor
