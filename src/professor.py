@@ -11,6 +11,10 @@ class Professor(Pessoa):
         self.__matricula = matricula
         self.__disciplinas = []  # Lista de objetos Disciplina
 
+    @property
+    def disciplinas(self):
+        return self.__disciplinas
+
     def get_tipo(self) -> str:
         return "PROFESSOR"
 
