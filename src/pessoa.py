@@ -1,4 +1,4 @@
-#CLASSE PESSO.py
+#CLASSE PESSOA.py
 from abc import ABC, abstractmethod
 from datetime import datetime
 
@@ -28,4 +28,5 @@ class Pessoa(ABC):
         return hoje.year - self._data_nascimento.year
     
     def __str__(self):
+
         return f"{self.get_tipo()}: {self._nome}"
