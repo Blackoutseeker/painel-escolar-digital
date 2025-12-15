@@ -2,8 +2,8 @@ class Turma:
     def __init__(self, nome, ano_letivo):
         self.nome = nome
         self.ano_letivo = ano_letivo
-        self.alunos = []      # Lista para armazenar objetos Usuario (alunos)
-        self.disciplinas = [] # Lista para armazenar objetos Disciplina
+        self.alunos = []  # Lista para armazenar objetos Usuario (alunos)
+        self.disciplinas = []  # Lista para armazenar objetos Disciplina
 
     def adicionar_aluno(self, aluno):
         """Adiciona um aluno à lista da turma."""
