@@ -21,6 +21,11 @@ class Usuario:
     def email(self):
         return self.__email
 
+    def login_por_nome(self, nome, senha):
+        if nome == self.nome and senha == self.__senha:
+            return True
+        return False
+
     def exibir_informacoes(self):
         print('Informações do usuário:')
         print(f"Nome: {self.__nome}")
