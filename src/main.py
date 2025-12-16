@@ -1,5 +1,9 @@
+from cli.interface import CLI
+
+
 def main():
-    pass
+    interface = CLI()
+    interface.main_menu()
 
 
 if __name__ == '__main__':
