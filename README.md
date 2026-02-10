@@ -30,3 +30,13 @@ O Painel de Acompanhamento Escolar Digital beneficiará três perfis principais:
 **Professores e Coordenadores Pedagógicos:** Os educadores contarão com uma plataforma eficiente para registrar observações, interagir com as famílias e manter uma comunicação mais ágil, direta e documentada.
 
 **Gestores e Secretarias Escolares:** Este grupo poderá otimizar processos administrativos, centralizar a comunicação oficial e fortalecer a imagem da instituição como uma parceira engajada na formação educacional dos alunos.
+
+---
+
+**O que é projeto físico de banco de dados?**
+
+É uma etapa fundamental enquanto se planeja a implementação de um banco de dados real, com algum *SGBD* (SQLite, MySQL, PostgreSQL, etc.). Enquanto na *modelagem lógica* nos atentamos apenas às entidades, seus atributos e relacionamentos, na *modelagem física* podemos avançar mais um passo e definir tipagem de dados, chaves primárias e estrangeiras, restrições e organização de tabelas, praticamente tornando o modelo em um *SQL* executável.
+
+**Por que ela é importante para quem está começando a aprender a programar?**
+
+Ela permite a compreensão de como os dados são realmente armazenados, a escrita de código se torna melhor conforme o aprendizado, além da preparação profissional para projetos reais.
