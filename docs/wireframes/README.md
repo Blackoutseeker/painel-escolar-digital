@@ -1,0 +1,1 @@
+Área destinada para a prototipação de telas, wireframes e mockups de baixa fidelidade do projeto.
