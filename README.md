@@ -40,3 +40,11 @@ O Painel de Acompanhamento Escolar Digital beneficiará três perfis principais:
 **Por que ela é importante para quem está começando a aprender a programar?**
 
 Ela permite a compreensão de como os dados são realmente armazenados, a escrita de código se torna melhor conforme o aprendizado, além da preparação profissional para projetos reais.
+
+---
+
+**Como prototipar um Wireframe e aplicar Design Centrado no Usuário?**
+
+O desenvolvimento de sistemas digitais não envolve apenas programação. A forma como as pessoas **interagem** com esses sistemas influencia diretamente sua eficiência, acessibilidade e impacto social. A área de **Interface Humano-Computador (IHC)** busca justamente melhorar essa interação entre pessoas e tecnologia.
+
+Uma prática essencial dentro desse processo é a criação de **wireframes**, que são representações visuais simples da estrutura de uma interface. Eles ajudam equipes de desenvolvimento a planejar telas, funcionalidades e fluxos antes da implementação final.
