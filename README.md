@@ -48,3 +48,18 @@ Ela permite a compreensão de como os dados são realmente armazenados, a escrit
 O desenvolvimento de sistemas digitais não envolve apenas programação. A forma como as pessoas **interagem** com esses sistemas influencia diretamente sua eficiência, acessibilidade e impacto social. A área de **Interface Humano-Computador (IHC)** busca justamente melhorar essa interação entre pessoas e tecnologia.
 
 Uma prática essencial dentro desse processo é a criação de **wireframes**, que são representações visuais simples da estrutura de uma interface. Eles ajudam equipes de desenvolvimento a planejar telas, funcionalidades e fluxos antes da implementação final.
+
+---
+
+**Importância da Experiência do Usuário (UX)**
+
+A Experiência do Usuário (UX) é fundamental para garantir que um sistema seja fácil, intuitivo e agradável de usar. Um bom design de interface ajuda as pessoas a realizarem tarefas com mais rapidez, menos erros e menos frustração, tornando a tecnologia mais acessível para diferentes tipos de usuários.
+
+Quando um sistema possui uma interface bem planejada, os usuários conseguem entender suas funções com facilidade, o que aumenta a confiança e a satisfação durante o uso. Isso é importante tanto em aplicativos do dia a dia quanto em sistemas profissionais, como plataformas de estudo, bancos, hospitais e lojas virtuais.
+
+Além de melhorar a experiência das pessoas, um bom UX também influencia diretamente na adoção de sistemas no mundo real. Usuários tendem a continuar utilizando ferramentas que são simples, organizadas e eficientes. Já sistemas confusos ou difíceis de navegar podem causar desinteresse e abandono.
+
+> Sobre o design do nosso sistema: O design foi voltado para uma plataforma web, com visualização de desktop. As telas foram baseadas nos wireframes elaborados pela própria equipe no Projeto Integrado anterior. Além da empregabilidade da acessibilidade visual, com bons contrastes, também foram impostos componentes padronizados, tais como botões, inputs e menus; dessa forma, mantendo coerência visual. Também há a aplicação de Psicologia das Cores, guiando o usuário de forma sutil na tomada de ações e decisões ao utilizar o sistema.
+
+* Link do protótipo no Figma: https://www.figma.com/design/R10IbkJCt2kdxHPKwKOYvd/Entreg%C3%A1vel-1---PI-3?node-id=0-1&t=z3btBQ9DJOS4LjEr-1
+* Link de navegação do protótipo: https://www.figma.com/proto/R10IbkJCt2kdxHPKwKOYvd/Entreg%C3%A1vel-1---PI-3?node-id=53-256&p=f&t=z3btBQ9DJOS4LjEr-0&scaling=contain&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=53%3A256
