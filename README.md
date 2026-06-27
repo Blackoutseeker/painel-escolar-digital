@@ -63,3 +63,30 @@ Além de melhorar a experiência das pessoas, um bom UX também influencia diret
 
 * Link do protótipo no Figma: https://www.figma.com/design/R10IbkJCt2kdxHPKwKOYvd/Entreg%C3%A1vel-1---PI-3?node-id=0-1&t=z3btBQ9DJOS4LjEr-1
 * Link de navegação do protótipo: https://www.figma.com/proto/R10IbkJCt2kdxHPKwKOYvd/Entreg%C3%A1vel-1---PI-3?node-id=53-256&p=f&t=z3btBQ9DJOS4LjEr-0&scaling=contain&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=53%3A256
+
+ ---
+
+📝**O que é Arquitetura de Software?**
+
+A arquitetura de software é utilizada para determinar a estrutura do sistema que será desenvolvido, tomando como base os objetivos do negócio. O software a ser desenvolvido é dividido em componentes que devem funcionar de forma independente e que podem ser alocados e reconfigurados de acordo com as demandas necessárias. É através da arquitetura de software que são definidas as características centrais da aplicação e onde é determinado o comportamento esperado dos seus componentes.
+
+*Qual sua importância no desenvolvimento de sistemas
+
+Contribui para determinar uma visão clara e direcionada para o desenvolvimento da aplicação.
+
+*Como ela impacta:
+
+escalabilidade: possuir componentes bem definidos facilita no processo de ampliação dos serviços para atender o aumento da demanda.
+
+segurança: a separação dos componentes atende ao CIA(confidencialidade, integridade e disponibilidade ) da cibersegurança, permitindo que um módulo afetado não exponha o sistema por inteiro.
+
+desempenho: é possível identificar de forma clara o tempo de resposta de cada componente e diagnosticar rapidamente a fonte de qualquer erro e lentidão
+
+manutenção: assegura a redução de custos na manutenção ao organizar de forma clara os componentes do sistema.
+
+evolução do sistema: deve considerar a capacidade de ampliação e modernização do sistema sem que implique na perda de desempenho.
+
+*Como a arquitetura influencia diretamente a qualidade de um projeto de software.
+
+Existem vários tipos de arquitetura, assim o desenvolvedor deve avaliar os objetivos do projeto para alinhar com aquele que melhor atende a demanda. Acima foram descritos os atributos de qualidade, eles devem ser considerados ao escolher a arquitetura do projeto, pois o impacto causado nesses atributos define todo o funcionamento da aplicação.
+
