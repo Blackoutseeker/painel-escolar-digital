@@ -24,6 +24,7 @@
   },
   "include": [
     "next-env.d.ts",
+    "prettier.config.js",
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
