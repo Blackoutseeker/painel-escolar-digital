@@ -7,10 +7,12 @@ const InstitutionalPanel: FC = () => {
     <div className="relative hidden overflow-hidden bg-indigo-900 lg:flex lg:w-1/2">
       <div className="absolute inset-0 z-0">
         <Image
+          className="object-cover opacity-20 mix-blend-overlay"
           src="https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&q=80&w=1000"
           alt="Crianças estudando"
           fill
-          className="object-cover opacity-20 mix-blend-overlay"
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
+          loading="eager"
         />
         <div className="absolute inset-0 bg-linear-to-br from-indigo-900 via-indigo-800 to-blue-900 opacity-90"></div>
       </div>
