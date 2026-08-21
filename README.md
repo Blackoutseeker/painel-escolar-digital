@@ -110,3 +110,13 @@ evolução do sistema: deve considerar a capacidade de ampliação e modernizaç
 \*Como a arquitetura influencia diretamente a qualidade de um projeto de software.
 
 Existem vários tipos de arquitetura, assim o desenvolvedor deve avaliar os objetivos do projeto para alinhar com aquele que melhor atende a demanda. Acima foram descritos os atributos de qualidade, eles devem ser considerados ao escolher a arquitetura do projeto, pois o impacto causado nesses atributos define todo o funcionamento da aplicação.
+
+## Tecnologias utilizadas
+
+- **Next.js**: para o desenvolvimento de aplicações web modernas, com renderização do lado do servidor e geração de sites estáticos.
+- **React**: para a construção de interfaces de usuário interativas e reativas.
+- **TypeScript**: para adicionar tipagem estática ao JavaScript, melhorando a robustez e a manutenção do código.
+- **Tailwind CSS**: para o estilo e design responsivo.
+- **ESLint**: para garantir a qualidade do código e seguir boas práticas de desenvolvimento.
+- **Prettier**: para formatação automática do código, mantendo um estilo consistente em todo o projeto.
+- **Git**: para controle de versão e colaboração no desenvolvimento do projeto. Usando o Git Conventional Commits para padronizar as mensagens de commit, conforme a alteração e seu escopo dentro do projeto.
