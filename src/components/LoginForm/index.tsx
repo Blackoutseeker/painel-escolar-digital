@@ -211,7 +211,7 @@ const LoginForm: FC = () => {
             <p className="text-sm text-gray-600">
               Se você ainda não possui acesso, entre em contato com a
               <a
-                href="#"
+                href="/admin"
                 className="ml-1 font-semibold text-indigo-600 hover:text-indigo-500"
               >
                 secretaria da escola
