@@ -4,12 +4,15 @@ import type { FC, SubmitEvent } from 'react'
 import { useState } from 'react'
 import Image from 'next/image'
 import { Settings, Mail, Lock, Eye, EyeOff, Loader2, LogIn } from 'lucide-react'
+import { useRouter } from 'next/navigation'
 
 const AdminLoginForm: FC = () => {
   const [email, setEmail] = useState<string>('')
   const [password, setPassword] = useState<string>('')
   const [showPassword, setShowPassword] = useState<boolean>(false)
   const [isLoading, setIsLoading] = useState<boolean>(false)
+
+  const router = useRouter()
 
   // Estado para gerenciar mensagens de feedback (erro ou sucesso)
   const [feedback, setFeedback] = useState<{
@@ -32,7 +35,7 @@ const AdminLoginForm: FC = () => {
           message: 'Autenticado com sucesso! Redirecionando para Cadastros...'
         })
 
-        // No Next.js real, você usaria: router.push("/admin/cadastros");
+        router.push('/cadastros')
       } else {
         setFeedback({
           type: 'error',
