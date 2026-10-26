@@ -1,6 +1,8 @@
-import type { FC } from 'react'
+﻿import type { FC } from 'react'
 import Image from 'next/image'
 import { BookOpen, ShieldCheck, Bell } from 'lucide-react'
+
+
 
 const InstitutionalPanel: FC = () => {
   return (
