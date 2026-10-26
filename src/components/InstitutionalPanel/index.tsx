@@ -1,8 +1,6 @@
-﻿import type { FC } from 'react'
+import type { FC } from 'react'
 import Image from 'next/image'
 import { BookOpen, ShieldCheck, Bell } from 'lucide-react'
-
-
 
 const InstitutionalPanel: FC = () => {
   return (
@@ -38,7 +36,7 @@ const InstitutionalPanel: FC = () => {
             real. A ponte perfeita entre a escola e a sua casa.
           </p>
 
-          <div className="grid grid-cols-2 gap-4 pt-8">
+          <div className="pt-8 grid grid-cols-2 gap-4">
             <div className="flex items-center gap-3 text-indigo-100">
               <div className="rounded-full bg-indigo-800/50 p-2">
                 <ShieldCheck className="h-5 w-5 text-indigo-300" />
