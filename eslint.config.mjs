@@ -34,7 +34,8 @@ const eslintConfig = defineConfig([
         { argsIgnorePattern: '^_', caughtErrorsIgnorePattern: '^_' }
       ],
       'no-console': 'error',
-      'no-alert': 'error'
+      'no-alert': 'error',
+      'prettier/prettier': 'warn'
     }
   },
 
