@@ -111,6 +111,23 @@ evolução do sistema: deve considerar a capacidade de ampliação e modernizaç
 
 Existem vários tipos de arquitetura, assim o desenvolvedor deve avaliar os objetivos do projeto para alinhar com aquele que melhor atende a demanda. Acima foram descritos os atributos de qualidade, eles devem ser considerados ao escolher a arquitetura do projeto, pois o impacto causado nesses atributos define todo o funcionamento da aplicação.
 
+***
+
+📝**O que é Integração Contínua?**
+
+Diante da alteração do código do projeto é ativado um sistema de verificação que testa a mudança realizada. Essa prática é chamada de Integração Contínua (CI).
+
+Ou seja, cada parte é testada pelo sistema automatizado assegurando o funcionamento do todo e garantindo a organização do trabalho em equipe. É importante fazer uso dessa prática desde o início, deste modo é possível treinar boas práticas do desenvolvimento de sistema e se preparar para o fluxo do mercado de trabalho que exige colaboração de sistemas já em uso dentro de um time com diversos desenvolvedores com funções distintas..
+
+Além disso, a verificação e testagem de cada etapa da entrega garante que os erros possam ser corrigidos no estágio inicial do projeto e proporcionam maior seguraça ao desenvolvedor iniciante.
+
+Através desse projeto enfatizamos o uso de duas ferramentas complementares:
+
+Barreira de Qualidade e Prevenção de Falhas (ESLint): O processo de yarn lint atua como o principal guardião do repositório. Ele foi integrado às Branch Protection Rules do GitHub como um Status Check obrigatório. Isso significa que a esteira varre o código de toda a equipe em busca de erros de lógica, variáveis não declaradas, tipagens incorretas e falhas estruturais do React/Next.js. Se qualquer anomalia for detectada, a CI barra o Pull Request automaticamente, bloqueando o botão de merge e impedindo que código quebrado infecte a branch main.
+
+Padronização Autônoma e Redução de Atrito (Prettier): O processo do yarn prettier:write age de forma ativa. Em vez de simplesmente rejeitar um código mal formatado (com espaçamentos errados ou classes do Tailwind fora de ordem), a pipeline conserta o código na máquina virtual e faz um commit automático de volta na branch do autor.
+
+
 ## Tecnologias utilizadas
 
 - **Next.js**: para o desenvolvimento de aplicações web modernas, com renderização do lado do servidor e geração de sites estáticos.
