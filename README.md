@@ -127,6 +127,24 @@ Barreira de Qualidade e Prevenção de Falhas (ESLint): O processo de yarn lint 
 
 Padronização Autônoma e Redução de Atrito (Prettier): O processo do yarn prettier:write age de forma ativa. Em vez de simplesmente rejeitar um código mal formatado (com espaçamentos errados ou classes do Tailwind fora de ordem), a pipeline conserta o código na máquina virtual e faz um commit automático de volta na branch do autor.
 
+\*Passo a passo para realizar a configuração
+
+A configuração da nossa Integração Contínua (CI) foi estruturada de forma modular, dividindo as responsabilidades em dois arquivos YAML distintos dentro do diretório .github/workflows/: o eslint.yml (workflow principal) e o prettier.yml (workflow reutilizável). Essa decisão arquitetural foi tomada para otimizar o processamento em nuvem, garantindo que etapas dependentes só fossem executadas caso a validação primária fosse bem-sucedida.
+
+As principais ações (Actions) e configurações definidas foram:
+
+Gatilhos de Execução (on: push e pull_request para a branch main): Definidos no eslint.yml para garantir que qualquer código submetido à ramificação principal, seja por envio direto (quando permitido) ou via Pull Request, dispare obrigatoriamente a esteira de validação. O prettier.yml utiliza o gatilho on: workflow_call, transformando-o em um script secundário que só pode ser invocado por outro workflow.
+Controle de Permissões (permissions: contents: write): Configurado para elevar os privilégios do fluxo, autorizando o bot do GitHub Actions a reescrever arquivos e realizar commits diretamente no repositório.
+
+Checkout do Repositório (actions/checkout@v4): Utilizado em ambos os jobs para clonar o código-fonte da branch atual para dentro da máquina virtual (runner) do GitHub (Ubuntu-latest). No caso do Prettier, foi configurado com fetch-depth: 0 para garantir acesso completo ao histórico do Git necessário para os commits automáticos.
+Setup do Ambiente Node.js (actions/setup-node@v4): Ação crucial para provisionar o ambiente Node.js na versão 20. Configurada com o parâmetro cache: 'yarn' para reaproveitar módulos cacheados entre execuções, acelerando o tempo de build.
+
+Instalação de Dependências (yarn install --frozen-lockfile): Garante a instalação exata dos pacotes registrados no yarn.lock, prevenindo que versões divergentes quebrem a aplicação no ambiente de CI.
+
+Encadeamento Condicional (needs: eslint-check e uses:): Definido no final do workflow principal. O script diz ao GitHub que o fluxo do Prettier só deve ser chamado se o job de análise estática do ESLint não relatar nenhum erro, poupando minutos de computação caso o código já esteja estruturalmente quebrado.
+Git Auto-Commit (stefanzweifel/git-auto-commit-action@v5): Implementado no workflow do Prettier para capturar os arquivos que foram reformatados em memória e realizar o push (commit automático) de volta para a branch do desenvolvedor com a mensagem "style: aplica formatação automática do Prettier".
+
+
 ## Tecnologias utilizadas
 
 - **Next.js**: para o desenvolvimento de aplicações web modernas, com renderização do lado do servidor e geração de sites estáticos.
