@@ -144,7 +144,6 @@ Instalação de Dependências (yarn install --frozen-lockfile): Garante a instal
 Encadeamento Condicional (needs: eslint-check e uses:): Definido no final do workflow principal. O script diz ao GitHub que o fluxo do Prettier só deve ser chamado se o job de análise estática do ESLint não relatar nenhum erro, poupando minutos de computação caso o código já esteja estruturalmente quebrado.
 Git Auto-Commit (stefanzweifel/git-auto-commit-action@v5): Implementado no workflow do Prettier para capturar os arquivos que foram reformatados em memória e realizar o push (commit automático) de volta para a branch do desenvolvedor com a mensagem "style: aplica formatação automática do Prettier".
 
-
 ## Tecnologias utilizadas
 
 - **Next.js**: para o desenvolvimento de aplicações web modernas, com renderização do lado do servidor e geração de sites estáticos.
